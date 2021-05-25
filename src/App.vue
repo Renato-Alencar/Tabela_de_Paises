@@ -1,26 +1,26 @@
 <template>
-  <div id="app">
-    <fulltable/>
-  </div>
+  <v-app id="app">
+    <fulltable class="mytable justify-center"/>
+  </v-app>
 </template>
 
 <script>
-
-import fulltable from '@/components/TableComplete'
+import fulltable from './components/TableComplete';
 
 export default {
   name: 'App',
+
   components: {
-    fulltable
+    fulltable,
   }
-}
+};
 </script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
-}
+  #app {
+    background-color: #f5f5f5;
+    mytable: {
+      margin: 0 auto;
+    }
+  }
 </style>
